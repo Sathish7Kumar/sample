@@ -1,32 +1,42 @@
-import React from 'react'
-import './App.css';
-import Mobile from './pages/Mobile';
-import Cart from './pages/Cart';
-import Counter from './pages/Counter';
-import LifeCycle from './pages/LifeCycle';
-class App extends React.Component{
-  render(){
-    return(
-      <>
-      <h1>Hello</h1>
-      {/* <Mobile Mobilename="oneplus" />
-      <Cart amount = "25000" deliveryTime = "ETA 2days"/>
-      <Counter /> */}
-      <LifeCycle />
-      </>
-    )
-  }
+// import React, { useState } from 'react'
+// import Home1 from './context/Home1'
+
+// const App = () => {
+//   const [name , setname ] = useState("DHONI")
+//   return (
+//     <>
+//     <h1>APP COMPONENT</h1>
+//     <Home1 playername={name}/>
+//     </>
+//   )
+// }
+
+// export default App
+
+import React, { createContext, useState } from 'react'
+import Home1 from './context/Home1'
+import Context2 from './context/Context2'
+import Effect from './Effect/Effect'
+
+export  const PlayerContext = createContext()
+
+const App = () => {
+
+  const [name , setname ] = useState("DHONI")
+
+  // context = > create , provide , useContext
+
+
+  return (
+    <>
+    <PlayerContext.Provider value={name}>
+    <h1>APP COMPONENT</h1>
+    <Home1 name="sathish" />
+    </PlayerContext.Provider>
+    <Effect/>
+    {/* <Context2/> */}
+    </>
+  )
 }
+
 export default App
-
-// props = property
-// func - class 
-
-// state - class  - statefull component
-
-// func - stateless component
-// reactHooks -
-
-// lifecycle - class component
-
-// function reactHooks 

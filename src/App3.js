@@ -5,6 +5,7 @@ const App3 = () => {
 
    const [count, setcount] = useState(0)
    const [name, setname] = useState("pravin")
+
    const [change, setchange] = useState(false)
   
 
