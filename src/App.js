@@ -1,40 +1,34 @@
-// import React, { useState } from 'react'
-// import Home1 from './context/Home1'
-
-// const App = () => {
-//   const [name , setname ] = useState("DHONI")
-//   return (
-//     <>
-//     <h1>APP COMPONENT</h1>
-//     <Home1 playername={name}/>
-//     </>
-//   )
-// }
-
-// export default App
-
-import React, { createContext, useState } from 'react'
-import Home1 from './context/Home1'
-import Context2 from './context/Context2'
-import Effect from './Effect/Effect'
-
-export  const PlayerContext = createContext()
+import React from 'react'
+import {BrowserRouter , Routes , Route, Link} from "react-router-dom"
+import HomePage from './components/HomePage'
+import Mobile from './components/Mobile'
+import Cart from './components/Cart'
+import Navbar from './components/Navbar'
 
 const App = () => {
-
-  const [name , setname ] = useState("DHONI")
-
-  // context = > create , provide , useContext
-
-
   return (
     <>
-    <PlayerContext.Provider value={name}>
-    <h1>APP COMPONENT</h1>
-    <Home1 name="sathish" />
-    </PlayerContext.Provider>
-    <Effect/>
-    {/* <Context2/> */}
+    <BrowserRouter>
+    <Navbar/>
+    {/* <div className='nav'>
+        <ul>
+            <li>
+                <Link to='/' >Home</Link>
+            </li>
+            <li>
+                <Link to='/mobile' >Mobile</Link>
+            </li>
+            <li>
+                <Link to='/cart' >Cart</Link>
+            </li>
+        </ul>
+    </div> */}
+      <Routes>
+        <Route path='/' element={<HomePage/>} />
+        <Route path='/mobile' element={<Mobile/>} />
+        <Route path='/cart' element={<Cart/>} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.link{
+    /* display: block; */
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+}
+
+.link:hover{
+    border-bottom: 2px solid wheat;
+}
+
+.imgLink{
+    display: block;
+    text-align: center;
+}
+
+.heading{
+    color: blue;
+    text-align: center;
+}
+
+.nav{
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+ul{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
