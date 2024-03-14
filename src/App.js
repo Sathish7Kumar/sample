@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter , Routes , Route, Link} from "react-router-dom"
+import {BrowserRouter as Router , Routes , Route, Link} from "react-router-dom"
 import HomePage from './components/HomePage'
 import Mobile from './components/Mobile'
 import Cart from './components/Cart'
@@ -8,7 +8,7 @@ import Navbar from './components/Navbar'
 const App = () => {
   return (
     <>
-    <BrowserRouter>
+    <Router>
     <Navbar/>
     {/* <div className='nav'>
         <ul>
@@ -28,7 +28,7 @@ const App = () => {
         <Route path='/mobile' element={<Mobile/>} />
         <Route path='/cart' element={<Cart/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
     </>
   )
 }
