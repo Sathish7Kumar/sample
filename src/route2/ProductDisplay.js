@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import items from './Item'
 
 
-const ProductDisplay = () => {
+const ProductDisplay = ({addCart}) => {
     const {id} = useParams()
     const x = useNavigate()
     const pro = items.find((e) => e._id == id )
@@ -16,10 +16,9 @@ const ProductDisplay = () => {
         <h1>{pro.name}</h1>
         <img src={pro.image} height={100} width={100} />
         <h4>Specs : {pro.desc}</h4>
-        <h3>{`Price : {pro.price}`}</h3>
-        <button>Add</button>
+        <h3>{`Price : ${pro.price}`}</h3>
+        <button onClick={addCart}>Add</button>
         <button onClick={handleBack}>Back to Mobile Page</button>
-
     </div>
    </>
   )

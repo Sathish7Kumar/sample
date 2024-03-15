@@ -26,7 +26,7 @@ const App2 = () => {
   };
   return (
     <>
-      <Greeting isLoggedIn={login} />
+      <Greeting name="vasu" isLoggedIn={login} />
       <button onClick={()=>setlogin(!login)}>Change User</button>
       {/* <h1>Hello</h1>
     <input type="number"  onChange={(e)=>setnum(e.target.value)}  placeholder='enter ur name' /> */}

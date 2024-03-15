@@ -7,8 +7,16 @@ const Mobile = () => {
 
     const [data, setdata] = useState([])
 
+
+    // useEffect(()=>{
+    //     setdata(Products)
+    // },[])
+
     useEffect(()=>{
-        setdata(Products)
+      fetch('https://fakestoreapi.com/products')
+      .then(resp => resp.json())
+      .then(pro => setdata(pro))
+      .catch(err => console.log(err))
     },[])
 
   return (
@@ -21,7 +29,7 @@ const Mobile = () => {
                 <div key={index}>
                 <h1>{item.name}</h1>
                 <img src={item.image} height={100} width={100} />
-                <p>Spec {item.desc}</p>
+                <p>Specs :  {item.description}</p>
                 <h4>Price {item.price}</h4>
                 <button>Add</button>
                 </div>
