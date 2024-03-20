@@ -13,6 +13,7 @@ import items from "./route2/Item";
 import Cart from "./route2/Cart";
 
 const App4 = () => {
+  
   const [data, setdata] = useState([]);
 
   const [cartItem, setcartItem] = useState([]);
@@ -28,6 +29,7 @@ const App4 = () => {
   const removeCart = (item) => {
     setcartItem((prevItem) => prevItem.filter((e, i) => i !== item));
   };
+
   const calcTotal = () => {
     let total = 0;
     cartItem.forEach((e) => (total = total + e.price));
