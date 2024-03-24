@@ -18,7 +18,7 @@ const FoodHome = ({product,addCart}) => {
                                     <img src={item.image} />
                                     <p>{item.description}</p>
                                     <h4>{item.price}</h4>
-                                    <button onClick={()=>addCart(e)}>Add to Cart</button>
+                                    <button onClick={()=>addCart(item)}>Add to Cart</button>
                                 </div>
                             )
                         })}

@@ -15,7 +15,7 @@ const FoodCart = ({ cartItem, clearCart, removeCart, calcTotal, buyNow }) => {
                   <div key={i}>
                     <h3>{e.name}</h3>
                     <img src={e.image} height={100} width={100} />
-                    <h4>Price : Rs{e.price}</h4>
+                    <h4>Price : Rs {e.price}</h4>
                     <button onClick={() => removeCart(i)}>
                       Remove from Cart
                     </button>
