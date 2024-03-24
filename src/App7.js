@@ -47,7 +47,7 @@ const App7 = () => {
       <BrowserRouter>
       <ul className="nav">
         <li>
-        <Link className="link" to='/'><h1>Home</h1></Link>
+        <Link className="link" to='/'><h1>🍕🍔Home</h1></Link>
         </li>
         <li>
         <Link className="link" to='/cart'><h1>Cart : 🛒{cartItem.length}</h1></Link>
