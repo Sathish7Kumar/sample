@@ -44,3 +44,52 @@ img{
     height: 150px;
     width: 150px;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: black;
+    margin-bottom: 25px;
+}
+
+.logo{
+    float: left;
+    color: white;
+}
+
+.nav-links{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.icon{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .icon{
+        display: block;
+        float: right;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links.show{
+        display: block;
+    }
+    .nav-links li{
+        display: block;
+
+    }
+}

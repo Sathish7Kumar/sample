@@ -9,6 +9,8 @@ import {
   Link,
   BrowserRouter,
 } from "react-router-dom";
+import NavBar from "./food/NavBar";
+import './App.css'
 
 const App7 = () => {
   const [product, setproduct] = useState([]);
@@ -45,14 +47,15 @@ const App7 = () => {
     <>
       
       <BrowserRouter>
-      <ul className="nav">
+      <NavBar cartItem={cartItem}/>
+      {/* <ul className="nav">
         <li>
         <Link className="link" to='/'><h1>🍕🍔Home</h1></Link>
         </li>
         <li>
         <Link className="link" to='/cart'><h1>Cart : 🛒{cartItem.length}</h1></Link>
         </li>
-      </ul>
+      </ul> */}
         <Routes>
           <Route
             path="/"
