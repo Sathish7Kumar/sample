@@ -12,10 +12,10 @@ const App5 = () => {
 
   return (
     <Balance.Provider value={count}>
-    {/* <Reducer/> */}
+    <Reducer/>
     {/* <Memo/> */}
     {/* <Callback/> */}
-    <Ref/>
+    {/* <Ref/> */}
     </Balance.Provider>
   )
 }

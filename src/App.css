@@ -93,3 +93,19 @@ img{
 
     }
 }
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-c{
+    padding: 10px;
+}
+
+.m-image{
+    height: 300px;
+    width: 300px;
+}

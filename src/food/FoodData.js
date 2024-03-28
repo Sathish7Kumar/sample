@@ -2,7 +2,7 @@ const FoodData = [
     {
         "name":"Pizza",
         "image":"https://res.cloudinary.com/dtrxs5oj2/image/upload/v1629955293/Food%20App/ItalianPiza_axcv4b.jpg",
-        "subItemsData":{
+        "subItemsData": {
             "name":"Tasty Pizza",
             "subItems":[
                 {

@@ -9,6 +9,8 @@ import App5 from './App5';
 import App6 from './App6';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App7 from './App7';
+import App8 from './App8';
+import App9 from './App9';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,8 +19,10 @@ root.render(
     // <App2/>
     // <App3/>
     // <App4/>
-    <App5/>
+    // <App5/>
     // <App6/>
     // <App7/>
+    // <App8/>
+    <App9/>
 );
 
