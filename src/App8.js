@@ -12,8 +12,7 @@ const App8 = () => {
     const [product, setproduct] = useState([])
     const [cart, setcart] = useState([])
     const [cartValue, setcartValue] = useState(cart.length)
-
-
+    
     const getProducts = async() =>{
         try {
             const response = await axios.get(url)
