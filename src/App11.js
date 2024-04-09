@@ -83,7 +83,7 @@ function HomePage({setisLogin,isLogin}) {
   };
   return (
     <>
-      <h1>Welcome User</h1>
+      <h1>Welcome User </h1>
       <button onClick={handleLogout}>Logout</button>
     </>
   );
